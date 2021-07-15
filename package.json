@@ -5,7 +5,15 @@
   "author": "akky-xxxx <114.s.aki@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "spell-check": "cspell \"./src/**/*.{ts,tsx}\""
+    "spell-check": "cspell \"./src/**/*.{ts,tsx}\"",
+    "fix": "run-p fix:*",
+    "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
+    "fix-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\" --fix",
+    "fix-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --write",
+    "lint": "run-p lint:*",
+    "lint:ts": "eslint \"./src/**/*.{ts,tsx}\"",
+    "lint:ts-unused-exports": "ts-unused-exports ./tsconfig.json --searchNamespaces",
+    "type-check": "tsc"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.3",
