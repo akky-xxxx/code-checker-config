@@ -15,6 +15,7 @@
     "lint:ts-unused-exports": "ts-unused-exports ./tsconfig.json --searchNamespaces",
     "type-check": "tsc",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" --write",
+    "test": "echo \"jest は cli の表示をリセットしてしまうため、 check-all の後ろに直列でつなげる\"",
     "fix:pack": "fixpack"
   },
   "devDependencies": {
