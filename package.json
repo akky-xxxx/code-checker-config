@@ -13,7 +13,9 @@
     "lint": "run-p lint:*",
     "lint:ts": "eslint \"./src/**/*.{ts,tsx}\"",
     "lint:ts-unused-exports": "ts-unused-exports ./tsconfig.json --searchNamespaces",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" --write",
+    "fix:pack": "fixpack"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.3",
