@@ -5,6 +5,8 @@
   "author": "akky-xxxx <114.s.aki@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "check-all": "run-s fix check-code test",
+    "check-code": "run-p spell-check lint type-check",
     "spell-check": "cspell \"./src/**/*.{ts,tsx}\"",
     "fix": "run-p fix:*",
     "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
