@@ -3,5 +3,20 @@
   "version": "1.0.0",
   "repository": "https://github.com/akky-xxxx/code-checker-config.git",
   "author": "akky-xxxx <114.s.aki@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "cspell": "^5.6.6",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-unicorn": "^34.0.1",
+    "fixpack": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "ts-unused-exports": "^7.0.3",
+    "typescript": "^4.3.5"
+  }
 }
