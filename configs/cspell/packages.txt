@@ -1,0 +1,4 @@
+favalid
+reduxjs
+remeda
+stylelint

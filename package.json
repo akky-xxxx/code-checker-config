@@ -4,6 +4,9 @@
   "repository": "https://github.com/akky-xxxx/code-checker-config.git",
   "author": "akky-xxxx <114.s.aki@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "spell-check": "cspell \"./src/**/*.{ts,tsx}\""
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
