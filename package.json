@@ -1,24 +1,21 @@
 {
   "name": "code-checker-config",
-  "version": "1.0.0",
-  "repository": "https://github.com/akky-xxxx/code-checker-config.git",
-  "author": "akky-xxxx <114.s.aki@gmail.com>",
   "license": "MIT",
   "scripts": {
     "check-all": "run-s fix check-code test",
     "check-code": "run-p spell-check lint type-check",
-    "spell-check": "cspell \"./src/**/*.{ts,tsx}\"",
     "fix": "run-p fix:*",
-    "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
     "fix-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\" --fix",
     "fix-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --write",
+    "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" --write",
+    "fix:pack": "fixpack",
+    "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
     "lint": "run-p lint:*",
     "lint:ts": "eslint \"./src/**/*.{ts,tsx}\"",
     "lint:ts-unused-exports": "ts-unused-exports ./tsconfig.json --searchNamespaces",
-    "type-check": "tsc",
-    "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" --write",
+    "spell-check": "cspell \"./src/**/*.{ts,tsx}\"",
     "test": "echo \"jest は cli の表示をリセットしてしまうため、 check-all の後ろに直列でつなげる\"",
-    "fix:pack": "fixpack"
+    "type-check": "tsc"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.3",
@@ -34,5 +31,8 @@
     "prettier": "^2.3.2",
     "ts-unused-exports": "^7.0.3",
     "typescript": "^4.3.5"
-  }
+  },
+  "version": "1.0.0",
+  "author": "akky-xxxx <114.s.aki@gmail.com>",
+  "repository": "https://github.com/akky-xxxx/code-checker-config.git"
 }
