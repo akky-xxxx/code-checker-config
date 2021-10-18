@@ -1,4 +1,4 @@
-const { OFF } = require("./const")
+const { OFF, ERROR } = require("./const")
 
 module.exports = {
   plugins: ["unicorn"],
@@ -17,5 +17,14 @@ module.exports = {
     "unicorn/prefer-module": OFF,
     "unicorn/prefer-node-protocol": OFF,
     "unicorn/prefer-number-properties": OFF,
+    "unicorn/prevent-abbreviations": [
+      ERROR,
+      {
+        allowList: {
+          Props: true,
+          props: true,
+        },
+      },
+    ],
   },
 }
