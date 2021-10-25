@@ -1,5 +1,5 @@
 // チェック動作確認用のサンプル
-/* eslint-disable no-magic-numbers, no-console, no-unused-vars, @typescript-eslint/no-unused-vars */
+/* eslint-disable no-magic-numbers, no-console, max-lines, no-unused-vars, @typescript-eslint/no-unused-vars */
 
 /*
 =============================
