@@ -1,7 +1,6 @@
 const { OFF, WARN, ERROR } = require("./const")
 
 module.exports = {
-  extends: ["eslint:recommended"],
   rules: {
     complexity: [ERROR, 5],
     "max-depth": [ERROR, 3],

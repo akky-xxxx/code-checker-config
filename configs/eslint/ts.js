@@ -2,10 +2,6 @@ const { WARN, ERROR, OFF } = require("./const")
 
 module.exports = {
   parser: "@typescript-eslint/parser",
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-  ],
   rules: {
     /**
      * eslint の未使用変数チェックは buggy ということで tsconfig でチェックをかける
@@ -47,6 +43,10 @@ module.exports = {
     "@typescript-eslint/sort-type-union-intersection-members": [
       WARN,
       { checkIntersections: true },
+    ],
+    "@typescript-eslint/consistent-type-assertions": [
+      ERROR,
+      { assertionStyle: "never" },
     ],
   },
   settings: {
