@@ -8,7 +8,12 @@ module.exports = {
     project: ["./tsconfig.json"],
   },
   extends: [
-    "airbnb-base",
+    "eslint:recommended",
+    "next",
+    "airbnb",
+    "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "./configs/eslint/js",
     "./configs/eslint/unicorn",
     "./configs/eslint/import",
