@@ -15,4 +15,18 @@ module.exports = {
       { extensions: [".ts", ".tsx"] },
     ],
   },
+  overrides: [
+    {
+      files: ["**/*.stories.tsx"],
+      rules: {
+        "import/no-extraneous-dependencies": OFF,
+      },
+    },
+    {
+      files: ["**/*.tsx"],
+      rules: {
+        "no-use-before-define": OFF,
+      },
+    },
+  ],
 }
