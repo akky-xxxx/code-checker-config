@@ -19,6 +19,7 @@ module.exports = {
         "max-nested-callbacks": OFF,
         "no-magic-numbers": OFF,
         "sort-keys": OFF,
+        "no-undefined": OFF,
       },
     },
   ],
